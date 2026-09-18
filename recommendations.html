@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages-additions.css"><link rel="stylesheet" href="ai-bubble.css">
+  <title>Render Shop | AI Builder</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body class="fixed-page">
+  <nav class="navbar"><a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M8 24V8h8a5 5 0 0 1 0 10H8m7-5 8 11"/><path d="M21 8h3M23 5v6"/></svg></span><span class="logo-wordmark"><strong>RENDER</strong><small>SHOP / PC PARTS</small></span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="catalog.html">Parts</a></li><li><a href="builder.html">Build planner</a></li><li><a class="active" href="recommendations.html">AI Builder</a></li></ul></nav>
+  <main class="page-main app-page"><div class="page-heading"><div><p class="eyebrow">Recommendations</p><h1>Start with a use case</h1><p>Choose a budget and performance target to get a starting parts list.</p></div></div><div class="ai-layout recommendation-layout"><div class="ai-controls card"><h3>Build requirements</h3><div class="form-group"><label for="aiBudget">Budget (USD)</label><select id="aiBudget"><option value="">Select a budget</option><option value="300-500">$300 to $500</option><option value="500-800">$500 to $800</option><option value="800-1200">$800 to $1,200</option><option value="1200-2000">$1,200 to $2,000</option><option value="2000+">$2,000 or more</option></select></div><div class="form-group"><label for="aiPerformance">Performance target</label><select id="aiPerformance"><option value="">Select a target</option><option value="basic">Web, office, and video</option><option value="gaming-mid">1080p gaming</option><option value="gaming-high">1440p gaming</option><option value="gaming-ultra">4K gaming</option><option value="workstation">Rendering and heavy multitasking</option></select></div><div class="form-group"><label for="aiAvailability">Availability</label><select id="aiAvailability"><option value="">Select a preference</option><option value="in-stock">In stock only</option><option value="mixed">Mostly in stock</option><option value="any">Any availability</option></select></div><div class="form-group"><label for="aiStyle">Case and cooling preference</label><select id="aiStyle"><option value="">Select a preference</option><option value="minimal">Simple and compact</option><option value="gamer">RGB and gaming focused</option><option value="show">Glass-sided case</option><option value="silent">Lower noise</option></select></div><button class="btn btn-primary" id="aiSuggestBtn" type="button" style="width:100%; margin-top:16px;">Get recommendations</button></div><div class="ai-result card"><h3>Suggested parts</h3><div id="aiResultContent" aria-live="polite"><p class="empty-msg">Choose a budget and performance target, then click Get recommendations.</p></div></div></div></main>
+  <footer class="footer" aria-hidden="true"></footer>
+  <script src="data.js"></script><script src="script.js"></script><script src="ai-bubble.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

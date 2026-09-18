@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages-additions.css">
+  <title>Render Shop | Parts Catalog</title>
+  <link rel="stylesheet" href="ai-bubble.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="inspection.css">
+</head>
+<body class="fixed-page">
+  <nav class="navbar"><a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M8 24V8h8a5 5 0 0 1 0 10H8m7-5 8 11"/><path d="M21 8h3M23 5v6"/></svg></span><span class="logo-wordmark"><strong>RENDER</strong><small>SHOP / PC PARTS</small></span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a class="active" href="catalog.html">Parts</a></li><li><a href="builder.html">Build planner</a></li><li><a href="recommendations.html">AI Builder</a></li></ul></nav>
+  <main class="page-main app-page"><div class="page-heading"><div><p class="eyebrow">Catalog</p><h1>PC parts</h1><p>Choose a part to add it to the build planner.</p></div><a class="small-link" href="builder.html">Open build planner</a></div><div class="category-filters"><button class="cat-btn active" data-cat="all">All parts</button><button class="cat-btn" data-cat="cpu">CPUs</button><button class="cat-btn" data-cat="gpu">GPUs</button><button class="cat-btn" data-cat="ram">Memory</button><button class="cat-btn" data-cat="mobo">Motherboards</button><button class="cat-btn" data-cat="storage">Storage</button><button class="cat-btn" data-cat="psu">Power supplies</button><button class="cat-btn" data-cat="case">Cases</button><button class="cat-btn" data-cat="cooling">Cooling</button></div><div class="parts-grid compact-grid" id="partsGrid"></div></main>
+  <footer class="footer" aria-hidden="true"></footer>
+  <script src="data.js"></script><script src="price-history-data.js"></script><script src="script.js"></script>
+  <script src="ai-bubble.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

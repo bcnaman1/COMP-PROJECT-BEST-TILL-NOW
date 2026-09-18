@@ -1,0 +1,59 @@
+html[data-theme='dark'] {
+  --bg: #111820;
+  --bg-soft: #1a2530;
+  --panel: #1b2732;
+  --panel-soft: #202e39;
+  --ink: #edf2f2;
+  --muted: #aab6bb;
+  --line: #34434d;
+  --shadow: 0 16px 45px rgba(0, 0, 0, .25);
+}
+html[data-theme='dark'] body { background: radial-gradient(circle at 90% 0%, rgba(242,100,61,.14), transparent 28%), linear-gradient(180deg, #17222c 0%, var(--bg) 55%, #0e141a 100%); }
+html[data-theme='dark'] body::before { background-image: linear-gradient(rgba(237,242,242,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(237,242,242,.045) 1px, transparent 1px); }
+html[data-theme='dark'] .navbar { border-bottom-color: rgba(237,242,242,.12); background: rgba(17,24,32,.9); }
+html[data-theme='dark'] .card, html[data-theme='dark'] .part-card, html[data-theme='dark'] .home-side a, html[data-theme='dark'] .home-side-chat { background: var(--panel); border-color: var(--line); }
+html[data-theme='dark'] .part-card:hover { border-color: var(--accent); }
+html[data-theme='dark'] .part-specs, html[data-theme='dark'] .empty-msg, html[data-theme='dark'] .footer { color: var(--muted); }
+html[data-theme='dark'] select, html[data-theme='dark'] input, html[data-theme='dark'] textarea { color: var(--ink); background: var(--panel-soft); border-color: var(--line); }
+html[data-theme='dark'] .btn-secondary { color: var(--ink); border-color: var(--line); background: transparent; }
+html[data-theme='dark'] .btn-secondary:hover { background: var(--panel-soft); }
+html[data-theme='dark'] .core-chat-panel { background: var(--panel); border-color: var(--line); }
+html[data-theme='dark'] .core-chat-messages { background: #111a22; }
+html[data-theme='dark'] .core-chat-message.assistant { color: var(--ink); background: var(--panel-soft); border-color: var(--line); }
+html[data-theme='dark'] .core-chat-form, html[data-theme='dark'] .core-chat-note { background: var(--panel); border-color: var(--line); }
+html[data-theme='dark'] .core-chat-form textarea { color: var(--ink); background: #111a22; border-color: var(--line); }
+html[data-theme='dark'] .core-chat-note { color: var(--muted); }
+html[data-theme='dark'] .home-side-chat { border-color: var(--line); }
+html[data-theme='dark'] .cat-btn { color: var(--muted); background: var(--panel); border-color: var(--line); }
+html[data-theme='dark'] .cat-btn:hover { color: #fff; border-color: var(--accent); background: var(--panel-soft); }
+html[data-theme='dark'] .cat-btn.active { color: #fff; background: var(--accent); border-color: var(--accent); box-shadow: 4px 4px 0 rgba(242,100,61,.22); }
+html[data-theme='dark'] .select-part { color: var(--ink); background: var(--panel-soft); border-color: var(--line); }
+html[data-theme='dark'] .part-card.selected .select-part { color: #ffb5a3; background: rgba(200,82,79,.16); border-color: rgba(200,82,79,.45); }
+html[data-theme='dark'] .part-brand, html[data-theme='dark'] .home-side-label { color: #91a0a8; }
+html[data-theme='dark'] .footer { color: #91a0a8; }
+html[data-theme='dark'] .form-group label { color: #9eabb0; }
+html[data-theme='dark'] .part-category { color: #aab6bb; }
+html[data-theme='dark'] .part-icon { color: #ffc0ae; background: rgba(242,100,61,.18); border-color: rgba(242,100,61,.42); }
+html[data-theme='dark'] .part-icon-gpu, html[data-theme='dark'] .part-icon-cooling { color: #8ed4f2; background: rgba(36,116,169,.2); border-color: rgba(36,116,169,.4); }
+html[data-theme='dark'] .part-icon-ram { color: #d5b2ed; background: rgba(120,85,150,.2); border-color: rgba(120,85,150,.4); }
+html[data-theme='dark'] .part-icon-mobo { color: #a9d6ae; background: rgba(63,133,94,.2); border-color: rgba(63,133,94,.4); }
+html[data-theme='dark'] .part-icon-storage { color: #f4cc7c; background: rgba(197,132,37,.2); border-color: rgba(197,132,37,.4); }
+html[data-theme='dark'] .part-icon-psu { color: #ffb5ae; background: rgba(200,82,79,.2); border-color: rgba(200,82,79,.4); }
+html[data-theme='dark'] .part-icon-case { color: #bfcbdf; background: rgba(73,86,107,.24); border-color: rgba(73,86,107,.45); }
+html[data-theme='dark'] .home-side a, html[data-theme='dark'] .home-side-chat { border-color: var(--line); }
+html[data-theme='dark'] .home-side { background: rgba(27,39,50,.84); box-shadow: 0 18px 45px rgba(0,0,0,.2); }
+.theme-toggle { margin-left: 20px; padding: 7px 10px; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 6px; font-size: .68rem; font-weight: 800; }
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 700px) { .theme-toggle { margin-left: 0; } }
+
+/* Final palette overrides loaded after the legacy theme rules. */
+html[data-theme='dark'] { --bg: #101a20; --bg-soft: #17262d; --panel: #182a32; --panel-soft: #20343a; --ink: #eef4ee; --muted: #a6b5b6; --line: #34494d; --accent: #ff7550; --accent-dark: #ff9275; --blue: #65a3ed; --green: #64cfb6; --yellow: #f1c15e; --red: #ff8d8d; --shadow: 0 20px 55px rgba(0,0,0,.28); }
+html[data-theme='dark'] body { background: linear-gradient(135deg, #101a20 0%, #17252d 54%, #261f27 100%); }
+html[data-theme='dark'] body::before { opacity: .22; background-image: linear-gradient(rgba(238,244,238,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(238,244,238,.06) 1px, transparent 1px); }
+html[data-theme='dark'] .navbar { background: rgba(16,26,32,.86); border-bottom-color: var(--line); }
+html[data-theme='dark'] .btn-secondary, html[data-theme='dark'] .home-side, html[data-theme='dark'] .category-filters, html[data-theme='dark'] .part-card, html[data-theme='dark'] .current-build, html[data-theme='dark'] .compat-notice, html[data-theme='dark'] .ai-controls, html[data-theme='dark'] .ai-result { background: rgba(24,42,50,.88); }
+html[data-theme='dark'] .home-copy h1, html[data-theme='dark'] .page-heading h1 { text-shadow: none; }
+html[data-theme='dark'] .cat-btn.active { background: var(--accent); border-color: var(--accent); color: #172129; box-shadow: 4px 4px 0 rgba(255,117,80,.25); }
+html[data-theme='dark'] .part-category > span:last-child { color: #a6b5b6; background: rgba(24,42,50,.84); border-color: #34494d; }
+html[data-theme='dark'] body::after { color: transparent; opacity: .16; -webkit-text-stroke-color: var(--accent); text-shadow: 18px 18px 0 rgba(100,207,182,.04); }
+html[data-theme='dark'] .logo-wordmark small { color: #a6b5b6; }

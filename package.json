@@ -1,0 +1,9 @@
+{
+  "name": "render-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Render Shop PC parts catalog with a secure Groq assistant.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

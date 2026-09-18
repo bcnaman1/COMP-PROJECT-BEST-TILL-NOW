@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages-additions.css">
+  <title>Render Shop | Build Planner</title>
+  <link rel="stylesheet" href="ai-bubble.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body class="fixed-page">
+  <nav class="navbar"><a class="logo" href="index.html"><span class="logo-icon" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M8 24V8h8a5 5 0 0 1 0 10H8m7-5 8 11"/><path d="M21 8h3M23 5v6"/></svg></span><span class="logo-wordmark"><strong>RENDER</strong><small>SHOP / PC PARTS</small></span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="catalog.html">Parts</a></li><li><a class="active" href="builder.html">Build planner</a></li><li><a href="recommendations.html">AI Builder</a></li></ul></nav>
+  <main class="page-main app-page"><div class="page-heading"><div><p class="eyebrow">Build planner</p><h1>Plan your PC</h1><p>Add parts from the catalog and review common compatibility checks.</p></div><a class="small-link" href="catalog.html">Back to parts</a></div><div class="builder-layout builder-page-layout"><div class="current-build card"><h3>Selected parts</h3><div id="buildList" class="build-list"><p class="empty-msg">No parts selected yet. Add parts from the catalog.</p></div><div class="build-summary" id="buildSummary" style="display:none;"><p><strong>Estimated price:</strong> <span id="totalPrice">$0</span></p><p><strong>Compatibility:</strong> <span id="compatStatus">Not checked</span></p></div><button class="btn btn-danger" id="clearBuildBtn" style="display:none;">Clear selections</button></div><div class="compat-notice card"><h3>Compatibility notes</h3><ul id="compatMessages"><li>Select parts to see compatibility checks.</li></ul><a href="catalog.html" class="btn btn-primary builder-add-button">Add more parts</a></div></div></main>
+  <footer class="footer" aria-hidden="true"></footer>
+  <script src="data.js"></script><script src="script.js"></script>
+  <script src="ai-bubble.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
